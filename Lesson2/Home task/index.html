@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM</title>
+    <script src="./src/index.js" defer></script>
+</head>
+<body>
+    <style>
+        
+        /* Стилізація контейнера форми для кращого розташування елементів */
+        #form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Відступи між елементами форми */
+            max-width: 300px; /* Обмеження ширини форми */
+        }
+        /* Базовий стиль для кнопки */
+        #checkResult {
+            background-color: #4CAF50; /* Приємний зелений колір */
+            color: white; /* Білий колір тексту */
+            font-size: 16px; /* Розмір шрифту */
+            font-family: Arial, sans-serif; /* Сучасний шрифт без засічок */
+            font-weight: bold; /* Жирне накреслення тексту */
+            padding: 12px 24px; /* Внутрішні відступи (вертикальні та горизонтальні) */
+            border: none; /* Видалення стандартної системної рамки */
+            border-radius: 6px; /* М'яке скруглення кутів */
+            cursor: pointer; /* Зміна курсора на "руку" при наведенні */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
+            transition: all 0.3s ease; /* Плавність анімації для всіх ефектів */
+        }
+    </style>
+    <h1>Перевірка призовного віку</h1>
+    <form id="form">
+        <label>
+            Введіть ваше ім'я:
+            <input type="text" id="userName" required>
+        </label>
+        <label>
+            Введіть ваш вік:
+            <input type="number" id="userAge" required>
+        </label>
+        <button type="submit" id="checkResult">Перевірити облікові документи</button>
+    </form>
+    <p id="final-Result"></p>
+</body>
+</html>

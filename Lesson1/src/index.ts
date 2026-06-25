@@ -1,1 +1,1 @@
-console.log("Hello typeScript!!!");
+console.log("--watch done");
